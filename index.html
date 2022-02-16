@@ -84,11 +84,17 @@
       <div _="install Color(c: 7)" class="clickable"><i class="twa twa-2x twa-black-large-square"></i></div>
       <div _="install Color(c: 0)" class="clickable"><i class="twa twa-2x twa-wastebasket"></i></div>
     </div>
-    <div class="d-flex justify-content-center justify-content-evenly mx-auto mb-5" style="width: 20em;">
+    <div class="d-flex justify-content-center justify-content-evenly mx-auto mb-3" style="width: 20em;">
       <a class="text-muted clickable" _="on click get prompt('Paste exported data here:') js(it) if(it) { localStorage.setItem('pixels', it); location.reload(); } end">Import</a>
       <a class="text-muted clickable" _="on click js return localStorage.getItem('pixels') end get prompt('You can copy the following text and import it on another device.', it)">Export</a>
       <a class="text-muted clickable" _="on click get confirm('Are you sure you want to clear your data?') js(it) if(it) { localStorage.removeItem('pixels'); location.reload(); } end">Clear</a>
-      <a class="text-muted clickable" _="on click alert('Keep track of whatever you want in a year using pixels! Data is stored on this device, but you can move it with the import/export buttons. Created by @_djpeacher.')">About</a>
+      <a class="text-muted clickable" _="on click alert('Keep track of whatever you want in a year using pixels! Data is stored on this device, but you can move it with the import/export buttons. Created by @_djpeacher.')">About</a>      
+    </div>
+    <div class="d-flex justify-content-center justify-content-evenly mx-auto mb-5">
+      <p>
+        Made with <i class="twa twa-red-heart"></i> by
+        <a href="https://twitter.com/_djpeacher" target="_blank">Jonathan Peacher</a>
+      </p>
     </div>
     <script>
       function save() {
