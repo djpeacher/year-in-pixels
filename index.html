@@ -83,7 +83,7 @@
       <a class="text-muted clickable" _="on click get prompt('Paste exported data here:') js(it) if(it) { localStorage.setItem('pixels', it); location.reload(); } end">Import</a>
       <a class="text-muted clickable" _="on click js return localStorage.getItem('pixels') end get prompt('You can copy the following text and import it on another device.', it)">Export</a>
       <a class="text-muted clickable" _="on click get confirm('Are you sure you want to clear your data?') js(it) if(it) { localStorage.removeItem('pixels'); location.reload(); } end">Clear</a>
-      <a class="text-muted clickable" _="on click alert('Keep track of whatever you want in a year using pixels! Data is stored on this device, but you can move it with the import/export buttons. Created by @_djpeacher.')">About</a>      
+      <a class="text-muted clickable" _="on click alert('Keep track of whatever you want in a year using pixels! Data is stored on your device, and can be imported and exported. Created by Jonathan Peacher.')">About</a>      
     </div>
     <div class="d-flex justify-content-center justify-content-evenly mx-auto mb-5">
       <p>
